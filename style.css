@@ -227,9 +227,19 @@ footer h3 {
     padding: 15px;
     background-color: #320000;
 }
+
 .contatos-container {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.contato {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 .contatos h1 {
     font-family: "Lobster", cursive;
@@ -237,55 +247,17 @@ footer h3 {
     color: #320000;
     font-size: clamp(28px, 8vw, 40px);
     margin-bottom: 30px;
-
 }
-
-.contatos form {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contatos label {
+.contato h2 {
     color: #320000;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-.contatos input,
-.contatos textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #8d4925;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contatos textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-#mensagem-sucesso {
-    color: green;
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
-}
-.contatos button {
-    background-color: #8d4925;
-    color: #F8F8FF;
-    width: 120px;
-    border: none;
-    padding:8px 16px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contatos button:hover {
-    background-color: #320000;
+.contato span {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
 }
 @media (max-width:600px) {
     header {

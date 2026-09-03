@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Contatos - Padaria Farias</title>
 </head>
 
@@ -24,36 +24,44 @@
             <a href="contatos.html">Contatos</a>
         </nav>
     </header>
-
     <main>
 
         <section class="contatos">
 
             <h1>Entre em Contato</h1>
-            
 
             <div class="contatos-container">
-                <form>
-                   
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" required>
-                   
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" required>
-                   
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" required></textarea>
-                   
-                    <button type="submit">Enviar</button>
 
-                </form>
-                <p id="mensagem-sucesso"></p>
+                <div class="contato">
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <h2>Instagram</h2>
+                    <p>@padariafarias</p>
+                </div>
+
+                <div class="contato">
+                    <span><i class="fa-brands fa-whatsapp"></i></span>
+                    <h2>WhatsApp</h2>
+                    <p>(81) 99999-9999</p>
+                </div>
+
+                <div class="contato">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <h2>E-mail</h2>
+                    <p>contato@padariafarias.com</p>
+                </div>
+
+                <div class="contato">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <h2>Endereço</h2>
+                    <p>Rua da Padaria, 100</p>
+                </div>
 
             </div>
 
         </section>
 
     </main>
+    
     <footer>
         <div class="footer-container">
 
@@ -88,6 +96,6 @@
             <p>&copy; 1990 Padaria Farias. Todos os direitos reservados.</p>
         </div>
     </footer>
-<script src="script.js"></script>
+
 </body>
 </html>
