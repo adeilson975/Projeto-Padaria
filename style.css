@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    min-height:100%;
+}
+body {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex:1;
+}
+
+header {
+    background-color: #8d4925;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px;
+}
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+header nav {
+    display: flex;
+    gap: 25px;
+}
+header nav a {
+    color: #F8F8FF;
+    text-decoration: none;
+    padding:5px;
+    transition:0.3s;
+}
+header nav a:hover {
+    background-color: #ffb48a;
+    border-radius: 5px;
+    color: #8d4925;
+   }
+.hero {
+    padding: 40px;
+    margin:20px;
+    text-align:left;
+    background-color:#ffb48a;
+    border-radius:10px;
+}
+.hero h1 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    color:#320000;
+    font-size:clamp(24px, 8vw, 40px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+   color:#320000;
+   max-width: 800px;
+   margin:0 auto 20px;
+    
+}
+.hero ul {
+    color:#320000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+      
+}
+.hero li {
+    margin-bottom: 20px;
+}
+.hero-imagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:20px;
+}
+.hero-imagens img {
+    width:30%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.produtos {
+    padding: 40px;
+    margin: 20px;
+    background-color:#ffb48a;
+    border-radius: 10px;
+}
+.produtos h1 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    color: #320000;
+    font-size: clamp(28px, 8vw, 40px);
+    margin-bottom: 30px;
+}
+.produtos h2 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    color: #320000;
+    font-size: clamp(28px, 6vw, 40px);
+    margin-bottom: 30px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 30%;
+    max-width: 300px;
+    min-height: 420px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+.card h2 {
+    color: #320000;
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+.card p {
+    color: #320000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+.card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.sobre {
+    padding: 40px;
+    margin: 20px;
+    background-color: #ffb48a;
+    border-radius: 10px;
+}
+.sobre h1 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    color: #320000;
+    font-size: clamp(24px, 8vw, 40px);
+    margin-bottom: 30px;
+}
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.sobre-imagem {
+    width: 45%;
+    max-width: 500px;
+}
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+.sobre-texto {
+    width: 45%;
+    max-width: 500px;
+    color: #320000;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.sobre-imagem figcaption {
+    text-align: center;
+    color: #320000;
+    margin-top: 10px;
+    font-style: italic;
+}
+footer {
+    background-color: #8d4925;
+    color: #F8F8FF;
+    margin-top: 40px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px 30px;
+}
+.footer-logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+footer h3 {
+    margin-bottom: 15px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: #F8F8FF;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffb48a;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #320000;
+}
+.contatos-container {
+    display: flex;
+    justify-content: center;
+}
+.contatos h1 {
+    font-family: "Lobster", cursive;
+    text-align: center;
+    color: #320000;
+    font-size: clamp(28px, 8vw, 40px);
+    margin-bottom: 30px;
+
+}
+
+.contatos form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contatos label {
+    color: #320000;
+    font-weight: bold;
+}
+
+.contatos input,
+.contatos textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8d4925;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contatos textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+#mensagem-sucesso {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+.contatos button {
+    background-color: #8d4925;
+    color: #F8F8FF;
+    width: 120px;
+    border: none;
+    padding:8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contatos button:hover {
+    background-color: #320000;
+}
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-imagens {
+        flex-direction: column;
+       
+    }
+    .hero-imagens img {
+         width:100%;
+         margin: 10px;
+    }
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+     .card {
+        width: 100%;
+        max-width: 350px;
+    }
+    .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+    .sobre-container {
+    flex-direction: column;
+}
+
+    .sobre-imagem,.sobre-texto {
+    width: 100%;
+    max-width: 350px;
+}
+}
