@@ -227,7 +227,12 @@ footer h3 {
     padding: 15px;
     background-color: #320000;
 }
-
+.contatos {
+    padding: 40px;
+    margin: 20px;
+    background-color: #ffb48a;
+    border-radius: 10px;
+}
 .contatos-container {
     display: flex;
     justify-content: center;
@@ -240,6 +245,15 @@ footer h3 {
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 .contatos h1 {
     font-family: "Lobster", cursive;
