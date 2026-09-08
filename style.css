@@ -273,14 +273,31 @@ footer h3 {
     display: block;
     margin-bottom: 10px;
 }
+.menu-hamburguer {
+    display: none;
+}
 @media (max-width:600px) {
     header {
         flex-direction: column;
     }
+    header nav.menu-aberto {
+        display: flex;
+    }
     header nav {
+        display: none;
         flex-direction: column;
         text-align: center;
     }
+    .menu-hamburguer {
+        display: block;
+        background: none;
+        border: none;
+        color: #F8F8FF;
+        font-size: 30px;
+        cursor: pointer;
+
+    }
+
     .hero-imagens {
         flex-direction: column;
        
